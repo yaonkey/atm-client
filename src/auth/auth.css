@@ -1,0 +1,12 @@
+.auth-form{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#auth-form{
+    text-align: center;
+}
+#auth-form li{
+    text-decoration: none;
+    list-style: none; 
+    margin-bottom: 15px;
+}

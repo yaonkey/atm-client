@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
+import Intro from './intro/intro.js';
+import Button from '@material-ui/core/Button';
+import Auth from './auth/auth.js';
+import Settings from './settings/settings.js';
+import Chat from './chat/chat.js';
 
-function App() {
+export default class App extends React.Component {
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Route exact path="/" component={Intro} />
+      <Route exact path="/auth" component={Auth} /> 
+      <Route exact path="/chat" component={Chat} /> 
+      <Route exact path="/settings" component={Settings} /> 
     </div>
+      
+
+
+    
   );
 }
+}
 
-export default App;
+

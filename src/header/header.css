@@ -1,0 +1,12 @@
+#def-but{
+    margin: 3px;
+}
+#def-but-right{
+    margin: 3px;
+    float: right;
+}
+#header{
+    background-color: #282c34;
+    padding: 10px;
+    min-height: 7vh;
+}
